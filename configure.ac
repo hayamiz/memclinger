@@ -1,6 +1,6 @@
 AC_PREREQ(2.60)
 AC_INIT([memclinger],
-        [0.0.0],
+        [0.0.1],
         [y.hayamizu@gmail.com])
 AC_CONFIG_SRCDIR([src/memclinger.c])
 AC_CONFIG_AUX_DIR([build-aux])
@@ -36,6 +36,7 @@ AC_SUBST([my_CFLAGS])
 AC_CONFIG_HEADERS(config.h)
 AC_CONFIG_FILES([
         Makefile
+        src/Makefile
 ])
 
 AC_OUTPUT

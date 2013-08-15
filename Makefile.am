@@ -28,10 +28,4 @@ LIBABC_CURRENT=2
 LIBABC_REVISION=0
 LIBABC_AGE=2
 
-src_memclinger_SOURCES =\
-	src/memclinger.h \
-	src/memclinger.c
-
-src_memclinger_LDFLAGS = $(AM_LDFLAGS)
-
-bin_PROGRAMS = src/memclinger
+SUBDIRS = src

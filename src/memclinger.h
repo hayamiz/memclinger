@@ -23,6 +23,22 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
+#include <string.h>
 #include <stdbool.h>
+#include <unistd.h>
+#include <sys/mman.h>
+
+
+typedef enum {
+    STRATEGY_MALLOC,
+    STRATEGY_MMAP,
+} strategy_t;
+
+typedef struct {
+    size_t      size;
+    strategy_t  strategy;
+    void       *ptr;
+} mem_desc_t;
 
 #endif
